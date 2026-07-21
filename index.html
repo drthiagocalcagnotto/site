@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Dr. Thiago Calcagnotto — Cirurgia e Traumatologia Bucomaxilofacial</title>
+  <meta name="description" content="Cirurgia e Traumatologia Bucomaxilofacial de alta complexidade. Procedimentos funcionais e estéticos com excelência e cuidado humanizado.">
+  <link rel="canonical" href="https://thiagocalcagnotto.com.br">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dr. Thiago Calcagnotto — Cirurgia e Traumatologia Bucomaxilofacial">
+  <meta property="og:description" content="Cirurgia e Traumatologia Bucomaxilofacial de alta complexidade. Procedimentos funcionais e estéticos com excelência e cuidado humanizado.">
+  <meta property="og:url" content="https://thiagocalcagnotto.com.br">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dr. Thiago Calcagnotto — Cirurgia e Traumatologia Bucomaxilofacial">
+  <meta name="twitter:description" content="Cirurgia e Traumatologia Bucomaxilofacial de alta complexidade. Procedimentos funcionais e estéticos com excelência e cuidado humanizado.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Dr. Thiago Calcagnotto",
+    "description": "Cirurgia e Traumatologia Bucomaxilofacial de alta complexidade.",
+    "url": "https://thiagocalcagnotto.com.br",
+    "telephone": "+555197812238",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Igrejinha",
+      "addressRegion": "RS",
+      "addressCountry": "BR"
+    },
+    "medicalSpecialty": "Oral and Maxillofacial Surgery",
+    "knowsAbout": [
+      "Cirurgia Ortognática",
+      "Cirurgia Reconstrutiva Facial",
+      "Lipoplastia Facial",
+      "Bichectomia",
+      "Cirurgia de ATM",
+      "Cirurgia de Sisos"
+    ],
+    "sameAs": ["https://instagram.com/thiagocalcagnotto"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- LOADING -->
+  <div class="loading" id="loading">
+    <div class="loading-bg"></div>
+    <div class="loading-text">
+      <span class="loading-line" data-side="left">DR. THIAGO</span>
+      <span class="loading-line" data-side="right">CALCAGNOTTO</span>
+    </div>
+    <div class="loading-counter" id="loadingCounter">0%</div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-items">
+      <a href="#hero" class="nav-item active" data-section="hero">
+        <span class="nav-dot"></span>
+        <span class="nav-label">Início</span>
+      </a>
+      <a href="#sobre" class="nav-item" data-section="sobre">
+        <span class="nav-dot"></span>
+        <span class="nav-label">Sobre</span>
+      </a>
+      <a href="#especialidades" class="nav-item" data-section="especialidades">
+        <span class="nav-dot"></span>
+        <span class="nav-label">Especialidades</span>
+      </a>
+      <a href="#cases" class="nav-item" data-section="cases">
+        <span class="nav-dot"></span>
+        <span class="nav-label">Cases</span>
+      </a>
+      <a href="#diferenciais" class="nav-item" data-section="diferenciais">
+        <span class="nav-dot"></span>
+        <span class="nav-label">Diferenciais</span>
+      </a>
+      <a href="#faq" class="nav-item" data-section="faq">
+        <span class="nav-dot"></span>
+        <span class="nav-label">FAQ</span>
+      </a>
+      <a href="#contato" class="nav-item" data-section="contato">
+        <span class="nav-dot"></span>
+        <span class="nav-label">Contato</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- HAMBURGER (mobile) -->
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- DRAWER (mobile) -->
+  <div class="drawer" id="drawer">
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <nav class="drawer-nav">
+      <a href="#hero" class="drawer-link">Início</a>
+      <a href="#sobre" class="drawer-link">Sobre</a>
+      <a href="#especialidades" class="drawer-link">Especialidades</a>
+      <a href="#cases" class="drawer-link">Cases</a>
+      <a href="#diferenciais" class="drawer-link">Diferenciais</a>
+      <a href="#faq" class="drawer-link">FAQ</a>
+      <a href="#contato" class="drawer-link">Contato</a>
+    </nav>
+  </div>
+
+  <!-- CTA FLUTUANTE -->
+  <a href="https://wa.me/555197812238" target="_blank" class="cta-float" id="ctaFloat">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Agendar consulta
+  </a>
+
+  <!-- HERO -->
+  <section id="hero" class="hero" data-section-name="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-logo">
+        <span class="hero-logo-name">Thiago Calcagnotto</span>
+        <span class="hero-logo-sub">CIRURGIA E TRAUMATOLOGIA BUCOMAXILOFACIAL</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-title-line">Duas <strong>décadas</strong> de experiência guiando cada cirurgia com <strong>técnica e proximidade</strong>.</span>
+      </h1>
+      <div class="hero-tags">
+        <span class="hero-tag">Alta Complexidade</span>
+        <span class="hero-tag">Atendimento Premium</span>
+      </div>
+      <a href="https://wa.me/555197812238" target="_blank" class="hero-cta">Agendar consulta</a>
+    </div>
+    <img src="img/hero-dr-thiago.webp" alt="Dr. Thiago Calcagnotto" class="hero-img" loading="lazy">
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section sobre" data-section-name="sobre">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2 class="section-title">Sobre</h2>
+      </div>
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <p><strong>“Eu não opero rostos, opero histórias.”</strong> Essa frase resume 23 anos de carreira construída na cirurgia bucomaxilofacial, desde a graduação na <strong>UFRGS em 2001</strong>. Foi ainda na faculdade, entre monitorias e projetos de pesquisa, que a especialidade se definiu como caminho.</p>
+          <p>O <strong>mestrado</strong> veio em 2007. O <strong>doutorado</strong>, em 2018. Entre um e outro, em 2011, <strong>fundei um Serviço de Referência em Igrejinha (RS), hoje um dos principais centros do Brasil na especialidade</strong>. Mais de <strong>200 alunos formados</strong>. Já passei por cargos de liderança na <strong>ABO-RS</strong>, idealizei cursos como o <strong>Surgiface Experience</strong> e escrevi o livro <strong>“Sabor e recuperação”</strong> para auxiliar pacientes nesse momento.</p>
+          <p>Mas acima de tudo, a convicção construída ao longo desses anos: <strong>toda cirurgia começa numa conversa, sobre expectativas, medos e o resultado que realmente faz sentido para quem está ali, na cadeira, buscando mais do que um procedimento</strong>.</p>
+          <div class="sobre-stats">
+            <div class="stat">
+              <span class="stat-num" data-count="23">0</span>
+              <span class="stat-label">Anos de experiência</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="200">0</span>
+              <span class="stat-label">Alunos formados</span>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-image">
+          <div class="sobre-badge">Referência em Alta Complexidade</div>
+          <img src="img/sobre-dr-thiago.webp" alt="Dr. Thiago Calcagnotto" class="sobre-img" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROPÓSITO -->
+  <section class="section proposito">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title">O que me move</h2>
+      </div>
+      <div class="proposito-content">
+        <p><strong>Nas minhas mãos.</strong> Não existe procedimento de alta complexidade sem planejamento minucioso. Cada caso é estudado como se fosse o único, porque para o paciente, é. Desde a primeira consulta até o último retorno, o que está em jogo não é apenas a <strong>técnica</strong>: é a <strong>confiança</strong> de alguém que entrega o rosto e a saúde nas minhas mãos.</p>
+        <p>É por isso que o <strong>ensino</strong> também faz parte do caminho. Formar novos cirurgiões é multiplicar esse nível de cuidado, garantindo que mais pessoas tenham acesso a tratamentos seguros, eficazes e inovadores, sem atalhos, sem pressa, sem perder de vista que cada paciente é <strong>único</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESPECIALIDADES -->
+  <section id="especialidades" class="section especialidades" data-section-name="especialidades">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Especialidades</h2>
+      </div>
+      <div class="especialidades-grid">
+        <div class="espec-card featured">
+          <div class="espec-pin"><span class="espec-num">I</span></div>
+          <div class="espec-body">
+            <span class="espec-badge">Alta Demanda</span>
+            <h3>Cirurgia Ortognática</h3>
+            <p>Corrige a posição dos maxilares para melhorar a respiração, a fala, a mastigação e a harmonia do rosto. Resultado funcional e estético em um único procedimento.</p>
+          </div>
+        </div>
+        <div class="espec-card featured">
+          <div class="espec-pin"><span class="espec-num">II</span></div>
+          <div class="espec-body">
+            <span class="espec-badge">Alta Demanda</span>
+            <h3>Cirurgias Reconstrutivas</h3>
+            <p>Reconstrução facial após traumas, tumores ou deformidades congênitas. Restaura a anatomia e a função com planejamento tridimensional personalizado.</p>
+          </div>
+        </div>
+        <div class="espec-card featured">
+          <div class="espec-pin"><span class="espec-num">III</span></div>
+          <div class="espec-body">
+            <span class="espec-badge">Alta Demanda</span>
+            <h3>Lipoplastia Facial</h3>
+            <p>Modelagem da gordura facial para um contorno mais definido e rejuvenescido. Resultado natural com técnica minimamente invasiva.</p>
+          </div>
+        </div>
+        <div class="espec-card featured">
+          <div class="espec-pin"><span class="espec-num">IV</span></div>
+          <div class="espec-body">
+            <span class="espec-badge">Alta Demanda</span>
+            <h3>Bichectomia</h3>
+            <p>Remoção das bolsas de Bichat para afinamento e harmonização do rosto. Realça a estrutura facial com um contorno mais definido e equilibrado.</p>
+          </div>
+        </div>
+        <div class="espec-card espec-grouped">
+          <div class="espec-pin espec-pin-grouped"><span class="espec-num">+</span></div>
+          <div class="espec-body">
+            <span class="espec-badge">Outros Procedimentos</span>
+            <h3>ATM, Sisos, Gengivais, Implantes e mais</h3>
+            <p>Cirurgias de sisos e extrações dentárias · Cirurgias de cistos e tumores · ATM, artrocentese e artroscopia · Cirurgias gengivais · Botox e preenchimento · Lifting palpebral e facial · Enxertos ósseos e implantes dentários · Biópsias · Procedimentos sob sedação consciente</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASES -->
+  <section id="cases" class="section cases" data-section-name="cases">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Antes e depois</h2>
+      </div>
+      <div class="cases-grid">
+        <div class="case-card">
+          <div class="case-img">
+            <img src="img/case-ortognatica.webp" alt="Resultado de cirurgia ortognática" loading="lazy">
+          </div>
+          <div class="case-body">
+            <span class="case-label">Cirurgia Ortognática</span>
+            <p>Correção de assimetria facial com melhora funcional e estética.</p>
+          </div>
+        </div>
+        <div class="case-card">
+          <div class="case-img">
+            <img src="img/case-lipoplastia.webp" alt="Resultado de lipoplastia facial" loading="lazy">
+          </div>
+          <div class="case-body">
+            <span class="case-label">Lipoplastia Facial</span>
+            <p>Definição do contorno mandibular com rejuvenescimento natural.</p>
+          </div>
+        </div>
+        <div class="case-card">
+          <div class="case-img">
+            <img src="img/case-lifting.webp" alt="Resultado de lifting palpebral" loading="lazy">
+          </div>
+          <div class="case-body">
+            <span class="case-label">Lifting Palpebral</span>
+            <p>Rejuvenescimento da região dos olhos com remoção do excesso de pele e reposicionamento dos tecidos para um olhar mais descansado e natural.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="section depoimentos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">05</span>
+        <h2 class="section-title">meus pacientes</h2>
+      </div>
+      <div class="depo-slider" id="depoSlider">
+        <div class="depo-track" id="depoTrack">
+          <div class="depo-card">
+            <div class="depo-stars">★★★★★</div>
+            <p>"Dr. Thiago é um profissional exemplar e um cirurgião bucomaxilofacial de excelência. Apresenta técnica cirúrgica precisa, segura e muito bem executada."</p>
+            <span class="depo-author">Letícia M.</span>
+          </div>
+          <div class="depo-card">
+            <div class="depo-stars">★★★★★</div>
+            <p>"Atendimento maravilhoso desde a primeira consulta. Fiz 4 procedimentos combinados e estou muito satisfeita com o resultado. Competência e profissionalismo que fazem toda diferença."</p>
+            <span class="depo-author">Leni A.</span>
+          </div>
+          <div class="depo-card">
+            <div class="depo-stars">★★★★★</div>
+            <p>"PERFEITO esse Dr! Super atencioso, caprichoso, e deixa o paciente super confortável com suas brincadeiras durante o processo, além de fazer tudo de forma indolor. Amei!"</p>
+            <span class="depo-author">Eduarda R.</span>
+          </div>
+          <div class="depo-card">
+            <div class="depo-stars">★★★★★</div>
+            <p>"Dr. Thiago é excelente. Perdi totalmente o medo de extrações. Com a expertise dele, superei todos os meus receios. Profissional atencioso e sempre muito claro."</p>
+            <span class="depo-author">Bruno E.</span>
+          </div>
+          <div class="depo-card">
+            <div class="depo-stars">★★★★★</div>
+            <p>"Muito bom o atendimento. Pós-operatório muito tranquilo, o que reforça que o procedimento foi bem executado. Profissional atencioso e sempre claro no que estava sendo feito."</p>
+            <span class="depo-author">Júlio B.</span>
+          </div>
+        </div>
+        <div class="depo-controls">
+          <button class="depo-dot active" data-index="0"></button>
+          <button class="depo-dot" data-index="1"></button>
+          <button class="depo-dot" data-index="2"></button>
+          <button class="depo-dot" data-index="3"></button>
+          <button class="depo-dot" data-index="4"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section id="diferenciais" class="section diferenciais" data-section-name="diferenciais">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">06</span>
+        <h2 class="section-title">Por que escolher o Dr. Thiago?</h2>
+      </div>
+      <div class="diffs-grid">
+        <div class="diff-card">
+          <span class="diff-pin">01</span>
+          <h3>Excelência Técnica</h3>
+          <p>Doutorado e mais de 23 anos de experiência dedicados à cirurgia bucomaxilofacial de alta complexidade.</p>
+        </div>
+        <div class="diff-card">
+          <span class="diff-pin">02</span>
+          <h3>Atendimento Humanizado</h3>
+          <p>Cada paciente é único. Respeito, escuta ativa e cuidado personalizado em todas as etapas do tratamento.</p>
+        </div>
+        <div class="diff-card">
+          <span class="diff-pin">03</span>
+          <h3>Alta Complexidade</h3>
+          <p>Referência em procedimentos de alta complexidade com resultados clínicos comprovados e tecnologia de ponta.</p>
+        </div>
+        <div class="diff-card">
+          <span class="diff-pin">04</span>
+          <h3>Ensino e Pesquisa</h3>
+          <p>Coordenador de cursos de especialização com mais de <strong>200 alunos formados</strong> e atuação na ABO-RS.</p>
+        </div>
+        <div class="diff-card">
+          <span class="diff-pin">05</span>
+          <h3>Referência Nacional</h3>
+          <p>Serviço de Referência em CTBMF em Igrejinha (RS), reconhecido como um dos principais centros do Brasil.</p>
+        </div>
+        <div class="diff-card">
+          <span class="diff-pin">06</span>
+          <h3>Tecnologia de Ponta</h3>
+          <p>Melhores equipamentos do mercado e técnicas minimamente invasivas com sedação consciente para máximo conforto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section faq" data-section-name="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">07</span>
+        <h2 class="section-title">Perguntas Frequentes</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>Como funciona a primeira consulta?</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a"><p>Na primeira consulta é realizada uma avaliação completa, com exame clínico detalhado e solicitação de exames de imagem quando necessários. O Dr. Thiago explica todas as opções de tratamento e esclarece dúvidas pessoalmente.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>Quanto tempo dura o procedimento?</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a"><p>O tempo varia conforme a complexidade do caso. Cirurgias de sisos podem levar de 30 minutos a 1 hora, enquanto cirurgias ortognáticas podem demandar de 4 a 8 horas. O Dr. Thiago discutirá todos os detalhes no pré-operatório.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>O procedimento é doloroso?</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a"><p>Todos os procedimentos são realizados sob efeito de anestesia local e/ou sedação consciente, garantindo máximo conforto. No pós-operatório, a equipe prescreve medicação adequada para controle da dor.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>Quanto tempo leva a recuperação?</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a"><p>O tempo de recuperação depende do procedimento. Cirurgias menos invasivas têm retorno às atividades em poucos dias. Cirurgias ortognáticas requerem um período maior, com acompanhamento próximo da equipe.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>O plano de saúde cobre a cirurgia?</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a"><p>Muitos procedimentos de Cirurgia e Traumatologia Bucomaxilofacial são cobertos por planos de saúde, especialmente os de caráter funcional. O Dr. Thiago auxilia com a documentação necessária para solicitação de autorização junto ao seu plano.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="contato" class="section cta-section" data-section-name="contato">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">08</span>
+        <h2 class="section-title">Vamos conversar?</h2>
+      </div>
+      <div class="cta-content">
+        <p class="cta-text">O Dr. Thiago atende pessoalmente cada paciente e tira todas as suas dúvidas antes de qualquer procedimento. Cirurgia de alta complexidade exige confiança — e ela começa com uma conversa franca e sem pressa.</p>
+        <a href="https://wa.me/555197812238" target="_blank" class="cta-button">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Fale com Dr. Thiago
+        </a>
+        <p class="cta-phone">(51) 97812-238</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <span class="footer-logo">TC</span>
+          <p>Dr. Thiago Calcagnotto<br>Cirurgia e Traumatologia Bucomaxilofacial</p>
+        </div>
+        <div class="footer-nav">
+          <a href="#sobre">Sobre</a>
+          <a href="#especialidades">Especialidades</a>
+          <a href="#cases">Cases</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <div class="footer-contact">
+          <a href="https://wa.me/555197812238" target="_blank">(51) 97812-238</a>
+          <span>Igrejinha, RS</span>
+          <a href="https://instagram.com/thiagocalcagnotto" target="_blank">@thiagocalcagnotto</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dr. Thiago Calcagnotto. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
